@@ -1,0 +1,2 @@
+curl -s 'http://127.0.0.1:9990/auth' -X POST -d '{"username": "leomessi", "password": "kaoskakimerah123"}' | \
+    python3 -c "import sys, json; print(json.load(sys.stdin)['token'])"
